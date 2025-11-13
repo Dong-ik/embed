@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P167 예제</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<h2>프런트엔드 개발자 지원서</h2>
+			<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾<br>
+			습니다.</p>
+			<hr>
+			<p><strong>개인 정보</strong></p>
+			<blockquote>
+				<label for="name" id="name">이름</label>
+				<input type="text" name="name" value="공백 없이 입력하세요."><br>
+				<label for="tel" id="tel">연락처</label>
+				<input type="tel" name="tel">
+			</blockquote>
+			<p><strong>지원 분야</strong></p>
+			<blockquote>
+				<input type="radio" name="wP" value="wP">
+				<label for="wP" id="wP">웹 퍼블리싱</label><br>
+				<input type="radio" name="wA" value="wA">
+				<label for="wA" id="wA">웹 애플리케이션 개발</label><br>
+				<input type="radio" name="recle" value="recle">
+				<label for="recle" id="recle">개발 환경 개선</label><br>
+			</blockquote>
+			<p><strong>지원 동기</strong></p>
+			<textarea rows="5" cols="60" name="memo" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br>
+			<input type="submit" value="접수하기">
+			<input type="submit" value="다시 쓰기">
+		</fieldset>
+	</form>
+</body>
+</html>

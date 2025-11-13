@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1번 예제</title>
+<style>
+	#container{
+		width: 500px;
+	}
+	h1 {
+		text-align: center;
+	}
+	h3 {
+		background-color: blue;
+		padding : 0px 10px 0px 10px;
+		display : inline-block;
+		color: white;
+	}
+	
+	input[type=text], input[type=password], input[type=email] {
+		display: inline-block;
+		width: 480px;
+		height: 30px;
+		margin-bottom: 10px;
+	}
+	
+	label {
+		display: inline-block;
+		font-family: "맑은 고딕";
+		font-weight: 600;
+		margin-bottom: 10px;		
+	}
+	
+	p {
+		font-family: "맑은 고딕";
+		font-weight: 600;
+	}
+	
+	textarea {
+		width: 480px;
+	}
+	
+	#buttons{
+		display: block;
+		width: 400px;
+		margin: 20px auto;
+		text-align: center;
+	}
+	
+	#buttons input {
+		display: inline-block;
+		width: 150px;
+		height: 50px;
+		margin: 5px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+	<form method="post">
+		<fieldset>
+			<h1>회원가입</h1>
+			
+			<h3>필수항목</h3>
+			
+			<p>
+			<label for="userId" id="userId">아이디</label><br>
+			<input type="text" name="userId"><br>
+			<label for="password" id="password">비밀번호</label><br>
+			<input type="password" name="password"><br>
+			<label for="email" id="email">이메일</label><br>
+			<input type="email" name="email" value="example@example.com"><br>
+			<label for="name" id="name">성명</label><br>
+			<input type="text" name="name" value="홍길동"><br>
+			<label for="age" id="age">나이</label><br>
+			<input type="text" name="age"><br>
+			</p>
+			
+			<h3>당신에 대해서 알고 싶어요!</h3>
+			
+			<p>취미를 선택해 주세요.</p>
+			<input type="radio" name="game" value="game">
+			<label for="game" id="game">게임하기</label>
+			<input type="radio" name="music" value="music">
+			<label for="music" id="music">음악듣기</label>
+			<input type="radio" name="ice" value="ice">
+			<label for="ice" id="ice">아이스음료 마시기</label>
+			
+			<p>좋아하는 음료를 선택해 주세요.(중복선택가능)</p>
+			<input type="checkbox" name="shake" value="shake">
+			<label for="shake" id="shake">쉐이크 종류 음료</label>
+			<input type="checkbox" name="tea" value="tea">
+			<label for="tea" id="tea">티 종류 음료</label>
+			<input type="checkbox" name="coffee" value="coffee">
+			<label for="coffee" id="coffee">커피 종류 음료</label>
+			
+			<p><label for="date" id="date">동아리 참석 가능 날짜</label>
+			<input type="date" name="date"><br></p>
+			
+			<label for="path" id="path">얼.죽.아에서 참여하고 싶은 모임</label>
+			<select id="path" name="path">
+				<option value="search">--선택해주세요--</option>
+				<option value="sns">저것</option>
+				<option value="blog">그것</option>
+				<option value="etc">이것</option>
+			</select>
+			
+			<p>포드폴리오 제출하기</p>
+			<input type="submit" value="업로드하기">
+			
+			<p>마지막으로 하고 싶은 말은?</p>
+			<textarea rows="10" cols="50" name="memo"></textarea><br>
+			
+			<div id="buttons">
+			<input type="reset" value="다시하기">
+			<input type="submit" value="제출하기">
+			</div>
+		</fieldset>
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P137 예제</title>
+</head>
+<body>
+	<h2>상품 선택 화면</h2>
+	<fieldset>
+		<legend>상품선택</legend>
+		<p><strong>주문할 상품을 선택해 주세요.</strong></p>
+		<ul>
+			<li>
+				<input type="checkbox" name="prod" value="s3">
+				<label for="prodS3" id="prodS3">선물용 3Kg</label>
+				<input type="number" min="0" max="5" name="prodS3Cnt">개 (최대 5개)
+			</li>
+			<li>
+				<input type="checkbox" name="prod" value="s5">
+				<label for="prodS5" id="prodS5">선물용 5Kg</label>
+				<input type="number" min="0" max="5" name="prodS5Cnt">개 (최대 5개)
+			</li>
+			<li>
+				<input type="checkbox" name="prod" value="f3">
+				<label for="prodF3" id="prodF3">가정용 3Kg</label>
+				<input type="number" min="0" max="5" name="prodF3Cnt">개 (최대 5개)
+			</li>
+			<li>
+				<input type="checkbox" name="prod" value="f5">
+				<label for="prodF5" id="prodF5">가정용 3Kg</label>
+				<input type="number" min="0" max="5" name="prodF5Cnt">개 (최대 5개)
+			</li>
+		</ul>
+				<p><strong>포장 선택</strong></p>
+		<ul>
+			<li>
+				<input type="radio" name="gift" value="yes">
+				<label for="giftYes" id="giftYes">선물 포장</label>
+			</li>
+			<li>
+				<input type="radio" name="gift" value="no">
+				<label for="giftNo" id="giftNo">선물 포장 안함</label>
+			</li>
+		</ul>
+	</fieldset>
+</body>
+</html>

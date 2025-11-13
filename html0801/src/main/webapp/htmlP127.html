@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P127 예제</title>
+</head>
+<body>
+	<h2>레드향 주문하기</h2>
+	<form name="order" id="orser" class="order" method="post" action="#">
+		<fieldset>
+			<legend>레드향 주문화면</legend>
+			<label for="name" id="name">이름</label>
+			<input type="text" name="name" size="2" value="홍길동" maxlength="2"><br>
+			<label for="address" id="address">배송주소</label>
+			<input type="text" name="address"><br>
+			<label for="tel" id="tel">연락처</label>
+			<input type="tel" name="tel"><br>
+			<label for="password" id="password" >패스워드</label>
+			<input type="password" name="password"><br>
+			<label for="email" id="email" >이메일</label>
+			<input type="email" name="email"><br>
+			날짜<input type="date" name="date"><br>
+			주문내용<textarea rows="5" cols="20" name="orderText"></textarea><br>		 
+		</fieldset>
+		<input type="submit" value="주문하기">
+	</form>
+</body>
+</html>

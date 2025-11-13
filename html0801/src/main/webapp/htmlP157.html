@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P157 예제</title>
+<style>
+	#container {
+		width: 600px;
+		margin: 10px auto;
+	}
+	
+	fieldset {
+		margin-bottom: 20px;
+	}
+		
+	ul {
+		list-style: none;
+		padding-left: 0px;
+	}
+	
+	ul li {
+		margin: 10px;
+		 
+	}
+	
+	li label {
+		width: 100px;
+		line-height: 36px;
+		float: left;
+		font-weight: bold;
+	}
+	
+	input[type="text"], input[type="password"], input[type="email"] {
+		width: 300px;
+		height: 30px;
+	}
+	
+	#buttons {
+		width: 400px;
+		margin: 20px auto;
+		text-align: center;
+	}
+	
+	#buttons input {
+		width: 150px;
+		height: 50px;
+		font-size: 20px;
+	}
+	
+	#buttons input:hover{
+		background-color: #1E90FF;
+		border-color: #1E90FF;
+		color: #ffffff;
+	}
+	
+	select {
+		width: 300px;
+		height: 30px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+	<h2>회원 가입을 환영합니다</h2>
+	<form method="post">
+		<fieldset>
+			<legend>사용자 정보</legend>
+				<ul>
+					<li>
+						<label for="userid" id="userid">아이디</label>
+						<input type="text" name="userid" value="4~10자 사이, 공백없이" required>
+					</li>
+					<li>
+						<label for="email" id="email">이메일</label>
+						<input type="email" name="email" required>
+					</li>						
+					<li>
+						<label for="password" id="password">비밀번호</label>
+						<input type="password" name="password" required>
+					</li>
+					<li>
+						<label for="passwordre" id="passwordre">비밀번호 확인</label>
+						<input type="password" name="passwordre" required>
+					</li>
+					<li>
+						<label for="path" id="path">가입 경로</label>
+						<select id="path" name="path">
+							<option value="search">검색</option>
+							<option value="sns">SNS</option>
+							<option value="blog">블로그</option>
+							<option value="etc">기타</option>
+						</select>
+					</li>
+					<li>
+						<label for="memo" id="memo">메 모</label>
+						<textarea role="20" cols="42" name="memo"></textarea>
+					</li>
+				</ul>
+		</fieldset>
+		<fieldset>
+			<legend>이벤트와 새로운 소식</legend>
+				<input type="radio" name="mailYes" value="yes">
+				<label for="mailYes" id="mailYes">메일 수신</label>
+				<input type="radio" name="mailNo" value="no">
+				<label for="mailNo" id="mailNo">메일 수신 안함</label>
+		</fieldset>
+		<div id="buttons">
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소">
+		</div>
+	</form>
+	</div>
+</body>
+</html>

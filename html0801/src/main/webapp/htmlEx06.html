@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6번 예제</title>
+<style>
+		table, th, td {
+			border: 3px solid black;
+			border-collapse: collapse;
+		}
+</style>
+</head>
+<body>
+	<form method="post">
+		<table>
+			<tr>
+				<td><label for="userId" id="userId">사용자 ID</label></td>
+				<td colspan="3">
+					<input type="text" name="userId">
+					<input type="submit" value="ID중복확인">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="password" id="password">비밀번호</label></td>
+				<td><input type="password" name="password"></td>
+				<td><label for="passwordRe" id="passwordRe">비밀번호 확인</label></td>
+				<td><input type="password" name="passwordRe"></td>
+			</tr>
+			<tr>
+				<td><label for="userName" id="userName">사용자 이름</label></td>
+				<td colspan="3"><input type="text" name="userName"></td>
+			</tr>
+			<tr>
+				<td><label for="rrn" id="rrn">주민등록번호</label></td>
+				<td colspan="3">
+					<input type="text" name="rrn1">
+					-
+					<input type="password" name="rrn2">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="birthday" id="birthday">생년월일</label></td>
+				<td><input type="text" name="birthday"></td>
+				<td><label for="sex" id="sex">성별</label></td>
+				<td>
+					<input type="radio" name="men" value="men">
+					<label for="men" id="men">남성</label>
+					<input type="radio" name="women" value="women">
+					<label for="women" id="women">여성</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="postCode" id="postCode">우편번호</label></td>
+				<td colspan="3">
+					<input type="text" name="postCode">
+					<input type="submit" value="우편번호검색">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="address" id="address">주소</label></td>
+				<td colspan="3"><input type="text" name="address"></td>
+			</tr>
+			<tr>
+				<td><label for="address2" id="address2">나머지주소</label></td>
+				<td colspan="3"><input type="text" name="address2"></td>
+			</tr>
+			<tr>
+				<td><label for="email" id="email">이메일</label></td>
+				<td colspan="3">
+					<input type="email" name="email">
+					@
+					<select>
+						<option value="null">선택하세요</option>
+						<option value="naver">네이버</option>
+						<option value="google">구글</option>
+						<option value="daum">다음</option>
+						<option value="etc">직접등록</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="job" id="job">직업</label></td>
+				<td colspan="3">
+					<select>
+						<option value="com">컴퓨터/정보통신</option>
+						<option value="machine">기계</option>
+						<option value="Philosophy">철학</option>
+						<option value="humanities">인문</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<input type="submit" value="등록">
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>	
+	</form>
+</body>
+</html>

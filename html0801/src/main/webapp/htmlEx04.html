@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>4번 예제</title>
+</head>
+<body>
+	<form method="post">
+		<h1>게시판 글쓰기</h1>
+
+		<label for="title" id="title"><strong>제목</strong></label><br>
+		<input type="text" name="title" value="제목 입력(4-100)" min="4" max="100"><br>
+		
+		<label for="memo" id="memo"><strong>내용</strong></label><br>
+		<textarea rows="10" cols="50" name="memo" placeholder="내용 작성"></textarea><br>
+		
+		<label for="name" id="name"><strong>작성자</strong></label><br>
+		<input type="text" name="name" value="작성자(2자-10자)" min="2" max="10"><br>
+		
+		<input type="submit" value="등록">
+	</form>
+</body>
+</html>
