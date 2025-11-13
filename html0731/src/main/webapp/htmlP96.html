@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P96 예제</title>
+<style>
+	table, th, td {
+		border: 5px solid #CDCDCD;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 10px 20px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<h1>테이블 셀 병합 실습</h1>
+	<table>
+		<caption>요안도라 객실</caption>
+		<tr style="background-color: lightgrey">
+			<th>방 이름</th>
+			<th>대상</th>
+			<th>크기</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td>유체방</td>
+			<td>여성 도미토리</td>
+			<td rowspan="3">4인실</td>
+			<td rowspan="4">1인 20,000원</td>
+		</tr>
+		<tr>
+			<td rowspan="2">동백방</td>
+			<td>동성 도미토리</td>
+		</tr>
+		<tr>
+			<td>가족 1팀</td>
+		</tr>
+		<tr>
+			<td>천혜향방</td>
+			<td>-</td>
+			<td>2인실</td>
+		</tr>
+		<tr>
+			<td style="background-color: lightgrey" colspan="4">바깥채 전체를 렌트합니다.</td>
+		</tr>
+	</table>
+</body>
+</html>

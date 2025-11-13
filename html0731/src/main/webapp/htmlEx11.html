@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>예제 11번</title>
+<style>
+	table, th, td {
+		border: 5px solid #CDCDCD;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 1px 10px;
+		height: 30px;
+		width: 110px;
+		text-align: left;
+	}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th rowspan="2">day</th>
+			<th style="text-align: center" colspan="6">time</th>
+		</tr>
+		<tr style="text-align: right">
+			<td>8:00</td>
+			<td>9:00</td>
+			<td>10:00</td>
+			<td>11:00</td>
+			<td>11:30</td>
+			<td>12:30</td>
+		</tr>
+		<tr>
+			<td>Mon</td>
+			<td>Course 1</td>
+			<td>Course 2</td>
+			<td>Course 3</td>
+			<td rowspan="5" style="text-align: center">B<br>R<br>E<br>A<br>K</td>
+			<td>Course 5</td>
+			<td></td>
+		</tr>
+		<tr style="text-align: left">
+			<td>Tue</td>
+			<td colspan="2"></td>
+			<td>Course 2</td>
+			<td>Course 4</td>
+			<td>Course 1</td>
+		</tr>
+		<tr style="text-align: left">
+			<td>Wed</td>
+			<td>Course 3</td>
+			<td colspan="2"></td>
+			<td>Course 2</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Thr</td>
+			<td rowspan="2">Course 4</td>
+			<td>Course 2</td>
+			<td>Course 3</td>
+			<td style="text-align: center" rowspan="2" colspan="2">Thesis</td>
+		</tr>
+		<tr>
+			<td >Fri</td>
+			<td></td>
+			<td>Course 1</td>
+		</tr>
+	</table>
+</body>
+</html>
