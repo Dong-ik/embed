@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1번 예제</title>
+	<style>
+		body {
+			width:448px;
+			background-color: #F5F5DC;
+			margin: 0 auto; 
+		}
+	
+		#information label {
+			width: 120px;
+			float: left;
+		}
+		
+		#information input {
+			width: 177px;
+		}
+		
+		fieldset {
+			width: 420px;
+			margin-bottom: 5px;
+		}
+		
+		#sex {
+			width : 420px;
+			text-align: center;
+		}
+		
+		#sex label {
+			display:inline-block;
+			width: 200px;
+		}
+		
+		#select input {
+			width:150px;
+		}
+		
+		#select {
+			margin: 2px;
+		}		
+	</style>
+</head>
+<body>
+	<form method="post">
+		<fieldset>
+			<legend>회원정보입력</legend>
+			<div id="information">
+				<label for="userId" id="userId">아이디</label>
+				<input type="text" name="userId">
+				<input type="submit" value="중복검사" style="width: 70px"><br>
+				<label for="password" id="password">패스워드</label>
+				<input type="password" name="password"><br>
+				<label for="passwordRe" id="passwordRe">패스워드 확인</label>
+				<input type="password" name="passwordRe"><br>
+				<label for="name" id="name">이름</label>
+				<input type="text" name="name"><br>
+				<label for="tel" id="tel">휴대폰 번호</label>
+				<input type="tel" name="tel"><br>
+				<label for="email" id="email">이메일</label>
+				<input type="email" name="email"><br>
+				<label for="date" id="date">생일</label>
+				<input type="date" name="date"><br>
+				<label for="homePage" id="homePage">홈페이지</label>
+				<input type="url" name="homePage"><br>
+			</div>
+			<div id="sex">
+				<input type="radio" name="men" value="men">
+				<label for="sex" id="men">남성</label><br>
+				<input type="radio" name="women" value="women">
+				<label for="sex" id="women">여성</label>
+			</div>		
+		</fieldset>
+		<div id="select">
+			<input type="submit" value="제출">
+			<input type="reset" value="초기화">
+		</div>
+	</form>
+</body>
+</html>

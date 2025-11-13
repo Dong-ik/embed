@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P281 예제</title>
+	<style>
+		p {
+			width: 500px;
+			height: 200px;
+			background-color: #eee;
+			border: 1px solid #cdcdcd;
+		}
+		
+		#static {
+			position: static;
+			background-color: #ff0000;
+		}
+		
+		#relative1 {
+			position: relative;
+			background-color: #00ff00;
+		}
+		
+		#relative2 {
+			position: relative;
+			left: 30px;
+			top: -50px;
+		}
+		
+		#fixed {
+			background-color: #000;
+			width: 100px;
+			height: 100px;
+			position: fixed;
+			right: 30px;
+			top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p id="static">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. </p>
+		<p id="relative1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. </p>
+		<p id="relative2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. </p>
+		<p id="fixed"></p>
+	</div>
+</body>
+</html>
