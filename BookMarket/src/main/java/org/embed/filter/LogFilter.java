@@ -1,0 +1,69 @@
+package org.embed.filter;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+
+public class LogFilter implements Filter {
+   
+   private String getCurrentTime() {
+      DateFormat formatter = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+      Calendar calendar = Calendar.getInstance();
+      
+      calendar.setTimeInMillis(System.currentTimeMillis());
+      
+      return formatter.format(calendar.getTime());
+   }
+   private String getURLPath(ServletRequest request) {
+	   HttpServletRequest req;
+	   String currentPath = "";
+	   String queryString = "";
+	   if (request instanceof HttpServletRequest) {
+		   req = (HttpServletRequest)request;
+		   currentPath = req.getRequestURI();
+		   queryString = req.getQueryString();
+		   queryString = queryString == null ? "" : "?" + queryString; // 주소?queryString
+	   }
+	   return currentPath + queryString;
+   }
+
+   @Override
+   public void destroy() {
+      // TODO Auto-generated method stub
+      System.out.println("BookMarket 종료");
+   }
+
+   @Override
+   public void doFilter(ServletRequest req, ServletResponse resp, FilterChain filterChain)
+         throws IOException, ServletException {
+      // TODO Auto-generated method stub
+	  System.out.println("접속한 클라이언트 IP : " + req.getRemoteAddr());
+      long start = System.currentTimeMillis();
+      System.out.println("접근한 URL 경로 : " + getURLPath(req));
+      System.out.println("요청 처리 시작 시간 : " + getCurrentTime());
+      filterChain.doFilter(req, resp);
+      long end = System.currentTimeMillis();
+      System.out.println("요청 처리 종료 시간 : " + getCurrentTime());
+      System.out.println("요청 처리 소요 시간 : " + (end - start) + "ms");
+      System.out.println("------------------------------------------------");
+   }
+
+   @Override
+   public void init(FilterConfig filterConfig) throws ServletException {
+      // TODO Auto-generated method stub
+	   System.out.println("BookMarket 초기화");
+   }
+
+   
+}
